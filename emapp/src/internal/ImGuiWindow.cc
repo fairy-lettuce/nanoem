@@ -1515,7 +1515,7 @@ ImGuiWindow::setFontPointSize(nanoem_f32_t pointSize)
     if (const char *fontPath = preference.extraFontPath()) {
         ImFontGlyphRangesBuilder builder;
         builder.AddRanges(m_atlas.GetGlyphRangesCyrillic());
-        builder.AddRanges(m_atlas.GetGlyphRangesChineseSimplifiedCommon());
+        builder.AddRanges(m_atlas.GetGlyphRangesChineseFull());
         builder.AddRanges(m_atlas.GetGlyphRangesJapanese());
         builder.AddRanges(m_atlas.GetGlyphRangesKorean());
         builder.AddRanges(m_atlas.GetGlyphRangesThai());
